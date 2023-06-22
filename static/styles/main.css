@@ -1,0 +1,101 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(255,255,255);
+    margin-bottom: 60px;
+    height: 80px;
+    font-size: 17px;
+}
+
+.logo-text {
+    color: #2A2F30;
+}
+
+.nav-link {
+    color: #2A2F30;
+}
+
+.btn {
+    background-color: #4F4A81;
+    border-color: #4F4A81;
+}
+
+.banner {
+    height: 688px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+main {
+    align-content: center;
+    height: 1300px;
+    width: 100%;
+    background-color: #FAFAFA;
+    margin-bottom: 50px;
+}
+
+.intro {
+    justify-content: center;
+    margin: auto;
+    padding: 130px; 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.main-p {
+    color: #2A2F30;
+    font-size: 16px;
+}
+
+.services {
+    margin-top: 30px;
+}
+.service-header {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 35px;
+  }
+
+.service-list {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #FBF0E9;
+    padding: 15px;
+}
+
+.service-list h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.newsletter {
+    background-color: #2A3030;
+    height: 350px;
+    padding: 60px; 
+    color: #ffffff;
+}
+
+.input-border {
+    border: 10px;
+    border-radius: 3px;
+    height: 40px;
+    width: 530px;
+}
+
+.btn-submit {
+    background-color: #69727D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+}
