@@ -17,6 +17,10 @@ body {
     font-weight: 800;
 }
 
+.sidebar {
+    position: fixed;
+}
+
 .sidebar-nav {
     background-color: #675C66;
     width: 6.7rem;
