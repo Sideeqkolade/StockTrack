@@ -10,16 +10,16 @@ header {
 }
 
 .logo-text {
-    color: #2A2F30;
+    color: #675C66;
 }
 
 .nav-link {
-    color: #2A2F30;
+    color: #675C66;
 }
 
 .btn {
-    background-color: #4F4A81;
-    border-color: #4F4A81;
+    background-color: #675C66;
+    border-color: #675C66;
 }
 
 .banner {
@@ -30,16 +30,15 @@ header {
 
 main {
     align-content: center;
-    height: 1300px;
+    height: 1150px;
     width: 100%;
     background-color: #FAFAFA;
     margin-bottom: 50px;
 }
-
 .intro {
     justify-content: center;
     margin: auto;
-    padding: 130px; 
+    padding: 115px; 
 }
 
 h1 {
@@ -69,7 +68,7 @@ h1 {
 .service-list {
     border: 1px solid black;
     border-radius: 15px;
-    background-color: #FBF0E9;
+    background-color: #675C66;
     padding: 15px;
 }
 
@@ -93,7 +92,7 @@ h1 {
 }
 
 .btn-submit {
-    background-color: #69727D;
+    background-color: #675C66;
     color: #ffffff;
     border: none;
     padding: 10px 40px;
