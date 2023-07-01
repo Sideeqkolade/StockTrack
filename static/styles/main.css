@@ -2,12 +2,12 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header {
+/* header {
     background-color: rgb(255,255,255);
     margin-bottom: 60px;
     height: 80px;
-    font-size: 17px;
-}
+    font-size: 20px;
+}*/
 
 .logo-text {
     color: #675C66;
@@ -68,7 +68,7 @@ h1 {
 .service-list {
     border: 1px solid black;
     border-radius: 15px;
-    background-color: #675C66;
+    background-color: #998898;
     padding: 15px;
 }
 
