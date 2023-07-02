@@ -18,6 +18,7 @@ class Inventory(Base):
     item_code = Column(String(128), nullable=False)
     item_name = Column(String(128), nullable=False)
     brand_name = Column(String(128), nullable=False)
+    market_name = Column(String(128), nullable=False)
     supplier = Column(String(128), nullable=False)
     quantity = Column(Integer, nullable=False)
     unit = Column(Integer, nullable=False)
