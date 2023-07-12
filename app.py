@@ -15,7 +15,7 @@ def display_report():
     return render_template('reports.html', title=title)
 
 
-@app.route('/inventory', methods=['GET', 'POST'], strict_slashes=False)
+@app.route('/stocking', methods=['GET', 'POST'], strict_slashes=False)
 def display_inventory():
     title = 'Inventory'
     if request.method == 'POST':
@@ -28,7 +28,7 @@ def display_inventory():
         return redirect('/inventory')
 
     # Display the inventory form
-    return render_template('inventory.html', title=title)
+    return render_template('stocking.html', title=title)
 
 @app.route('/items', strict_slashes=False)
 def display_items():

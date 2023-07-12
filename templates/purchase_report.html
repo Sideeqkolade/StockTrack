@@ -1,11 +1,11 @@
-{% include 'bootstrap.html' %}
-<body>
-    {% include 'nav.html' %}
+{% extends 'sidebar.html' %}
+
+{% block content %}
     <div class="container">
-        <h3>Inventory Page</h3>
-        <div class="d-flex justify-content-sm-end mt-4"><a href="/download_purchase_report" class="btn btn-primary mt-5" role="button" data-bs-toggle="button">Download</a></div>
-        <table class="table table-dark table-hover caption-top mt-3">
-            <caption>Purchase Report</caption>
+        <h3>Purchase Report</h3>
+        <hr>
+        <div class="d-flex justify-content-sm-end mt-4"><a href="/download_purchase_report" class="main-btn btn btn-primary mt-5" role="button" data-bs-toggle="button">Download</a></div>
+        <table class="table table-dark table-hover caption-top mt-5">
             <thead class="table-light">
                 <tr>
                     <th scope="col">Purchase Date</th>
@@ -17,7 +17,7 @@
                     <th scope="col">Quantity</th>
                     <th scope="col">Unit Price</th>
                     <th scope="col">Total Price</th>
-                  </tr>
+                </tr>
             </thead>
 
             <tbody>
@@ -37,4 +37,4 @@
             </tbody>
         </table>
     </div>
-</body>
+{% endblock %}

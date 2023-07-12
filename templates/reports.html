@@ -1,3 +1,25 @@
-{% include 'nav.html' %}
+{% extends 'sidebar.html' %}
 
-{% include 'footer.html' %}
+{% block content %}
+    <div class="container">
+        <h3>Reports</h3>
+        <hr>
+        <div class="d-flex mt-5">
+            <a href="/purchase_report" class="text-decoration-none">
+                <div class="card col-6 mx-3">
+                        Purchase Report
+                </div>
+            </a>
+            <a href="" class="text-decoration-none">
+                <div class="card col-6 mx-3">
+                    Sales Report
+                </div>
+            </a>
+            <a href="" class="text-decoration-none">
+                <div class="card col-6 mx-3">
+                    Stock Report
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock %}

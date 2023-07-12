@@ -1,0 +1,63 @@
+{% extends 'sidebar.html' %}
+
+{% block content %}
+    <div class="container">
+        <h3>Stocking</h3>
+        <hr>
+        <form class="text-center row mt-3" style="font-size: 20px;" action="/inventory" method="post">
+            <div class="mb-3 col-6 g-3">
+                <label>Item Code</label>
+                <input type="text" required name="item_code" placeholder="IND001">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Item Name</label>
+                <input type="text" required name="item_name" placeholder="Noodles">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Brand Name</label>
+                <input type="text" required name="brand_name" placeholder="Indomitable">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Market Name</label>
+                <input type="text" required name="market_name" placeholder="Indomie">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Supplier</label>
+                <input type="text" required name="supplier" placeholder="Nestle">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Quantity</label>
+                <input type="number" required name="quantity">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Unit Price</label>
+                <input type="number" required name="unit">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Purchase Price</label>
+                <input type="number" required name="purchase_price">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Percentage profit</label>
+                <input type="number" required name="percentage_profit" min="0" max="100" step="0.01">
+            </div>
+
+            <div class="mb-3 col-6 g-3">
+                <label>Date</label>
+                <input type="date" required name="date">
+            </div>
+
+            <div class="mt-2">
+                <input type="submit" class="main-btn btn btn-primary btn-lg">
+            </div>
+        </form>
+    </div>
+{% endblock %}
