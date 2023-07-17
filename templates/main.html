@@ -1,81 +1,54 @@
 {% include 'bootstrap.html' %}
     <body>
         {% include 'nav.html' %}
-        <main class="main row">
-            <div class="main-text text-center main-col col mt-5">
-                <h1 class="main-h1 fw-bold">Wholesale Inventory Management App Solution</h1><br>
-                <p class="main-p">Optimize your inventory management with StockTrack, the website designed to help medium market wholesalers keep track of their stock.</p><br>
-                <a class="main-btn btn btn-primary btn-md" href="#" role="button">Learn More</a>
+        <div class="container">
+            <main class="main row">
+                <div class="main-text main-col col mt-5">
+                    <h1 class="main-h1 fw-bold">Wholesale Inventory Management App Solution</h1><br>
+                    <p class="main-p">Optimize your inventory management with StockTrack, the website designed to help medium market wholesalers keep track of their stock.</p><br>
+                    <a class="main-btn btn btn-primary btn-md" href="#about" role="button">Learn More</a>
+                </div>
+                <div class="main-banner main-col col">
+                    <img class="main-img object-fit-cover" src="../static/images/banner2.jpg">
+                </div>
+            </main>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="about-header mb-4 text-center">About StockTrack</h2>
+                <p class="about-subheader mb-4 text-break">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="main-banner main-col col">
-                <img class="main-img object-fit-cover" src="../static/images/banner4.jpg">
-            </div>
-        </main>
+        </section>
+
         <section id="service" class="mb-5">
             <h2 class="service-header text-center">Services</h2>
-            <div class="service-con">
-                <div class="d-flex justify-content-center align-items-center p-5 m-5" style="height: 300px; border: 1px solid black; ">
-                        <div class="p-5 ">
-                            <h4>Stocking</h4>
-                            <p>Our stocking service provides a professional and efficient solution for your inventory needs.</p>
-                        </div>
-                        <div class="p-2 align-items-center mt-4" style="height:; background-color: #BAC1C9;">
-                            <img src="../static/images/feature1.png" style="height: 130px; width: auto;" class="object-fit-cover">
-                        </div>
-                <!-- <div class="d-flex flex-row-reverse" style="height: 300px;">
-                    <div class="p-2" style="background-color: #B37802; height: 250px">
-                        <img src="../static/images/feature1.png" style="height: 150px; width: auto;" class="object-fit-cover">
-                    </div>
-                    <div class="p-2">
-                        <h4>Inventory Management for Medium Wholesalers</h4>
-                        <p>Our stocking service ensures your shelves are always fully stocked, providing a professional and efficient solution for your inventory needs.</p>
-                    </div>
-
-                    <div class="row service-row" style="height: 300px;">
-                        <div class="col service-text">
-                            <h4>Inventory Management for Medium Wholesalers</h4>
-                            <p>Our stocking service ensures your shelves are always fully stocked, providing a professional and efficient solution for your inventory needs.</p>
-                        </div>
-                        <div class="col pt-5" style="background-color: #009CCD; height: 250px">
-                            <img src="../static/images/feature1.png" style="height: 150px; width: auto;" class="object-fit-cover">
-                        </div> -->
-                    <!--<div class="service-list">
-                        
-                    </div>
-                    <div class="service-list">
-                        
-                        <!-- <h3>Inventory Management Reporting Solution</h3>
-                        <p>Our reports offer comprehensive analysis and insights on various topics, delivered in a professional and formal tone.</p> -->
-                    <!-- </div>
-                    <div class="service-list">
-                        <h3>Inventory Pricing Management System</h3>
-                        <p>Our Prices service provides a comprehensive analysis of market trends and competitor pricing strategies, helping businesses stay competitive and profitable.</p>
-                    </div>-->
-        </section>
-        <section id="about" class="mt-4">
             <div class="container">
-                <h2 class="about-header mb-5">About Us</h2>
-                <h4 class="about-subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                <div class="d-flex">
-                    <hr>
-                    <div></div>
-                    <hr>
-                </div>
-                <h3 class="text-center">Meet The Team</h3>
-                <div>
-                    <img>
+                <div class="service-con row">
+                    <div class="col">
+                        <h3 class="service-head fw-bold">Stocking</h3>
+                        <p>Our website is designed to help medium market wholesalers keep track of their stock.</p>
+                    </div>
+                    <img class="service-img object-fit-cover col" src="../static/images/stock.png " style="height: 270px;">
                 </div>
             </div>
-        </section>
-
-        <section id="newsletter mb-5">
-            <div class="newsletter justify-content-center text-center">
-                <h2>Subscribe to newsletter</h2><br>
-                <p>Enter your email address to register to our newsletter subscription!</p>
-                <form>
-                    <input type="email" name="email" class="input-border" placeholder="Email"><br><br>
-                    <button type="submit" class="main-btn btn btn-primary btn-lg">Send</button>
-                </form>
+            <div class="container">
+                <div class="service-con row">
+                    <img class="service-img object-fit-cover col" src="../static/images/item_page.png " style="height: 270px;">
+                    <div class="col">
+                        <h3 class="service-head fw-bold">Items</h3>
+                        <p>Optimize your inventory management with StockTrack, the website designed to help medium market wholesalers keep track of their stock.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service-con row">
+                    <div class="col">
+                        <h3 class="service-head fw-bold">Report</h3>
+                        <p>Our report service provides a professional and efficient report for easy understanding.</p>
+                    </div>
+                    <img class="service-img object-fit-cover col" src="../static/images/report_page.png " style="height: 270px;">
+                </div>
             </div>
         </section>
         {% include 'footer.html' %}
