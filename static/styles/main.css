@@ -5,12 +5,10 @@ body {
 
  header {
     background-color: rgb(255,255,255);
-    font-size: 20px;
-    margin-bottom: 70px;
-}
-
-nav {
-    height: 50px;
+    font-size: 19px;
+    z-index: 9999;
+    align-items: center;
+    color: #2A3030;
 }
 
 main {
@@ -18,6 +16,10 @@ main {
     width: 100%;
     position: relative;
     margin-bottom: 70px;
+}
+
+.main-text {
+    margin-top: 70px;
 }
 
 .logo-text {
@@ -158,11 +160,16 @@ table {
 }
 
 
-@media (max-width: 576px) { 
+@media screen and (max-width: 576px) {
+    
     body {
         font-size: 13px;
     }
 
+    header {
+        justify-content: space-between;
+    }
+        
     .main {
         padding: 15px;
         height: 290px;
@@ -170,6 +177,10 @@ table {
 
     .main-banner {
         display: none;
+    }
+
+    .main-text {
+        margin-top: 30px;
     }
 
     .main-h1 {
@@ -211,3 +222,120 @@ table {
         margin-bottom: 10px;
     }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        max-width: 500px;
+    }
+
+    nav {
+        font-size: 15px;    
+    }
+
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+    }
+
+    main {
+        height: 300px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .main-text {
+        margin-top: 5px;
+        margin: 10px;
+    }
+
+    .main-h1 {
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+
+    .main-p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .main-btn {
+        font-size: 13px;
+    }
+
+    .main-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about {
+        max-width: 500px;
+        margin-top: 0px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-header {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .about-subheader {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #service {
+        max-width: 500px;
+        margin-bottom: 100px;
+    }
+
+    .service-header {
+        font-size: 23px;
+        padding-top: 50px;
+    }
+
+    .service-con {
+        height: 400px;
+        width: auto;
+    }
+
+    .service-head {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .service-subhead {
+        font-size: 13px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .service-img {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+  }
+  
+  /* Media query for Surface Duo
+  @media screen and (min-width: 540px) and (max-width: 720px) {
+    body {
+        max-width: 500px;
+        height: auto;
+    }
+
+    #service {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    .service-img-ex {
+        height: 250px;
+    }
+} */
