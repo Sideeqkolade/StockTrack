@@ -25,7 +25,7 @@ def display_inventory():
         add_data_db(data)
         print('Form submitted successfully')
         # Redirect back to the same page (GET request)
-        return redirect('/inventory')
+        return redirect('/stocking')
 
     # Display the inventory form
     return render_template('stocking.html', title=title)
@@ -68,9 +68,6 @@ def download_purchase_report():
 
     return response
     
-
-
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
