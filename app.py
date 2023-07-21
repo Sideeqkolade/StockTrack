@@ -1,5 +1,3 @@
-import database
-import csv
 from flask import Flask, render_template, request, make_response, redirect
 from database import add_data_db, show_items, show_purchase_report, create_csv_string
 app = Flask(__name__)

@@ -4,7 +4,6 @@
 import io
 import csv
 from os import getenv
-from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from inventory import Base, Inventory
