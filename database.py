@@ -13,7 +13,10 @@ STOCKTRACK_USER = getenv('STOCKTRACK_USER')
 STOCKTRACK_PWD = getenv('STOCKTRACK_PWD')
 STOCKTRACK_HOST = getenv('STOCKTRACK_HOST')
 STOCKTRACK_DB = getenv('STOCKTRACK_DB')
-engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.format(STOCKTRACK_USER, STOCKTRACK_PWD, STOCKTRACK_HOST, STOCKTRACK_DB))
+engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.format(STOCKTRACK_USER, STOCKTRACK_PWD, STOCKTRACK_HOST, STOCKTRACK_DB),
+                       connect_args={"ssl": {
+                         "ssl_ca": "/etc/ssl/cert.pem"
+                       }})
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
